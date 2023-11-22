@@ -8,7 +8,7 @@ try {
 
 const register = async(req,res)=>{
     try {
-        res.send("auth route ka register route chl gya.....")
+      res.send(req.body)
     } catch (error) {
         console.log(error)
     }
