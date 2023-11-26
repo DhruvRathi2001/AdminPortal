@@ -33,8 +33,8 @@ const register = async (req, res) => {
       //across different JWT libraries and systems .
     });
   } catch (error) {
-    console.log("Error:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+  
+    next(error) //next nhi karenge toh error middleware call nhi hoga.....
   }
 };
 
@@ -64,7 +64,8 @@ const login = async (req, res) => {
       res.status(401).json({ msg: "Invalid email or password" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" });
+    next(error)
+    //res.status(500).json({ error: "Internal Server Error" });
   }
 };
 

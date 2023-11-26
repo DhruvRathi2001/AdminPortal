@@ -1,0 +1,12 @@
+const express = require("express");
+const router = express.Router();
+
+const contactController = require("../controllers/contact-controller");
+
+
+router.route("/contact").post(contactController) 
+//router.route("/contact").post(contactController.contactForm) //(YEH KYO NHI CHALA????????????????????????)
+
+
+module.exports = router;
+
