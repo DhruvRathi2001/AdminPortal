@@ -8,11 +8,13 @@ import { Contact } from "./pages/Contact";
 import { Service } from "./pages/Service";
 import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
-
+import { Navbar } from "./components/Navbar";
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Navbar></Navbar>
+        {/*<BrowserRouter> and <Routes> k bech mai jo bhi component hai woh har route k upar aa jaaega */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -27,3 +29,5 @@ const App = () => {
 };
 
 export default App;
+
+//TO start -- npm run dev
