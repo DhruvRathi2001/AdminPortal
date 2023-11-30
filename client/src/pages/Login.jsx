@@ -36,8 +36,8 @@ export const Login = () => {
                 <img
                   src="/images/login.jpg"
                   alt="login image"
-                  width="400"
-                  height="400"
+                  width="500"
+                  height="600"
                 />
               </div>
 

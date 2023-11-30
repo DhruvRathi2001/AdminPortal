@@ -38,8 +38,8 @@ export const Register = () => {
                 <img
                   src="/images/register.jpg"
                   alt="registration image"
-                  width="600"
-                  height="700"
+                  width="450"
+                  height="550"
                 />
               </div>
 
