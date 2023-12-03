@@ -9,6 +9,8 @@ import { Service } from "./pages/Service";
 import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
 import { Navbar } from "./components/Navbar";
+import { Error } from "./pages/Error";
+import { Footer } from "./components/Footer";
 const App = () => {
   return (
     <>
@@ -22,7 +24,10 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Error />} />
         </Routes>
+        <Footer></Footer>
+          {/*</BrowserRouter> and </Routes> k bech mai jo bhi component hai woh har route k upar aa jaaega */}
       </BrowserRouter>
     </>
   );
